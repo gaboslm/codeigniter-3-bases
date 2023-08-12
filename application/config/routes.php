@@ -53,3 +53,7 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+$route['api/auth/register']['POST'] = 'api/Auth_Controller/register';
+$route['api/auth/login']['POST'] = 'api/Auth_Controller/login';
+$route['api/user']['GET'] = 'api/User_Controller/user';
+$route['api/user/imagen']['POST'] = 'api/User_Controller/image';
